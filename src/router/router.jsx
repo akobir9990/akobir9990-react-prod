@@ -15,7 +15,7 @@ function router(lsItem, setLsItem, getLs) {
           element={<Home lsItem={lsItem} setLsItem={setLsItem} getLs={getLs} />}
         />
         <Route
-          path="/asdasderadasiuerhuiahdiuearasdsadasd"
+          path="/adminadmin"
           element={<Admin lsItem={lsItem} setLsItem={setLsItem} />}
         />
         <Route path="/login" element={<Login />} />

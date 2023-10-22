@@ -5,7 +5,7 @@ function Login() {
     let userName = document.getElementById("userName").value;
     let password = document.getElementById("password").value;
     if (userName === "akobir" && password === "9990") {
-      location.href = "/asdasderadasiuerhuiahdiuearasdsadasd";
+      location.href = "/adminadmin";
     } else {
       alert("yana bir urinib ko'ring userName: akobir,  password: 9990");
     }
