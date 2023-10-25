@@ -83,3 +83,32 @@
   font-weight: 400;
   line-height: 150%; /* 18px */
 }
+.admin {
+  display: flex;
+  width: 217px;
+  height: 72px;
+  padding: 8px;
+  margin-left: 24px;
+  border: 1px solid red;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.admin .ava {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.admin .arrowDown {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.admin span {
+  color: var(--onSurface, #232323);
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

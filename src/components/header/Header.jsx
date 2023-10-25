@@ -5,6 +5,8 @@ import searchIcon from "../../assets/images/search.svg";
 import likes from "../../assets/images/likeIcon.svg";
 import products from "../../assets/images/productsIcon.svg";
 import basket from "../../assets/images/basketIcon.svg";
+import arrowDown from "../../assets/images/arrowDown.svg";
+import user from "../../assets/images/user.svg";
 
 function Header() {
   return (
@@ -46,9 +48,9 @@ function Header() {
           </button>
         </div>
         <div className="admin">
-          <img src="" alt="ava" className="ava" />
-          <span>admin name</span>
-          <img src="" alt="icon" />
+          <img src={user} alt="ava" className="ava" />
+          <span>Алексей</span>
+          <img src={arrowDown} alt="icon" className="arrowDown" />
         </div>
       </div>
     </div>
