@@ -1,3 +1,61 @@
+@import "../../assets/fonts.css";
+
 .header-container {
   display: flex;
+  align-items: center;
+}
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  padding: 8px;
+  margin: 0 16px 0 40px;
+  border-radius: 4px;
+  border: none;
+  gap: 8px;
+  background: rgba(112, 192, 91, 1);
+  cursor: pointer;
+}
+.catalog span {
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 26px 0 0;
+  color: rgba(255, 255, 255, 1);
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 10px;
+  border: 1px solid rgba(112, 192, 91, 1);
+}
+.search img {
+  cursor: pointer;
+}
+
+#searchInput {
+  border: none;
+  flex-grow: 1;
+}
+#searchInput:focus {
+  outline: none;
+}
+#searchInput::placeholder {
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
