@@ -2,6 +2,9 @@ import "./header.css";
 import logo from "../../assets/images/logo.svg";
 import burger from "../../assets/images/burger.svg";
 import searchIcon from "../../assets/images/search.svg";
+import likes from "../../assets/images/likeIcon.svg";
+import products from "../../assets/images/productsIcon.svg";
+import basket from "../../assets/images/basketIcon.svg";
 
 function Header() {
   return (
@@ -29,9 +32,18 @@ function Header() {
           <img className="searchIcon" src={searchIcon} alt="searchIcon" />
         </div>
         <div className="btns">
-          <button className="likes">likes</button>
-          <button className="orders">orders</button>
-          <button className="basket">basket</button>
+          <button className="likes btn">
+            <img src={likes} alt="" />
+            <span>Избранное</span>
+          </button>
+          <button className="orders btn">
+            <img src={products} alt="" />
+            <span>продукты</span>
+          </button>
+          <button className="basket btn">
+            <img src={basket} alt="" />
+            <span>Корзина</span>
+          </button>
         </div>
         <div className="admin">
           <img src="" alt="ava" className="ava" />
