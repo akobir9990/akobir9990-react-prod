@@ -4,6 +4,7 @@ import Admin from "../pages/admin/Admin";
 import Orders from "../pages/orders/Orders";
 import Basket from "../pages/basket/Basket";
 import Likes from "../pages/likes/Likes";
+import Catalog from "../pages/catalog/Catalog";
 
 function router() {
   return (
@@ -13,6 +14,7 @@ function router() {
       <Route path="/orders" element={<Orders />} />
       <Route path="/basket" element={<Basket />} />
       <Route path="/likes" element={<Likes />} />
+      <Route path="/catalog" element={<Catalog />} />
     </Routes>
   );
 }
