@@ -1,8 +1,0 @@
-.adminContainer {
-  width: 1440px;
-  margin: 0 auto;
-  border: 1px solid red;
-  padding: 10px 116px;
-  display: flex;
-  flex-direction: column;
-}

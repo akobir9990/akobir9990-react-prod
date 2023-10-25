@@ -1,14 +1,14 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
-function Basket() {
+function Orders() {
   return (
     <div>
       <Header />
-      <div className="main">basket</div>
+      <div className="main">Orders</div>
       <Footer />
     </div>
   );
 }
 
-export default Basket;
+export default Orders;
