@@ -7,6 +7,7 @@ import products from "../../assets/images/productsIcon.svg";
 import basket from "../../assets/images/basketIcon.svg";
 import arrowDown from "../../assets/images/arrowDown.svg";
 import user from "../../assets/images/user.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -34,18 +35,18 @@ function Header() {
           <img className="searchIcon" src={searchIcon} alt="searchIcon" />
         </div>
         <div className="btns">
-          <button className="likes btn">
+          <NavLink to="/likes" className="likes btn">
             <img src={likes} alt="" />
             <span>Избранное</span>
-          </button>
-          <button className="orders btn">
+          </NavLink>
+          <NavLink to="/orders" className="orders btn">
             <img src={products} alt="" />
             <span>продукты</span>
-          </button>
-          <button className="basket btn">
+          </NavLink>
+          <NavLink to="/basket" className="basket btn">
             <img src={basket} alt="" />
             <span>Корзина</span>
-          </button>
+          </NavLink>
         </div>
         <div className="admin">
           <img src={user} alt="ava" className="ava" />
