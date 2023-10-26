@@ -4,6 +4,8 @@ import fruits from "../../assets/images/fruits.svg";
 import Stock from "../../components/stock/Stock";
 import NewItems from "../../components/newItems/NewItems";
 import PurchasedBefore from "../../components/purchasedBefore/PurchasedBefore";
+import SpetialOffers from "../../components/specialOffers/SpecialOffers";
+import Map from "../../components/ourStores/OurStores";
 
 import "./homePage.css";
 function HomePage(user, setUser) {
@@ -37,6 +39,12 @@ function HomePage(user, setUser) {
         </div>
         <div className="homeComponent">
           <PurchasedBefore />
+        </div>
+        <div className="homeComponent">
+          <SpetialOffers />
+        </div>
+        <div className="homeComponent">
+          <Map />
         </div>
       </div>
 

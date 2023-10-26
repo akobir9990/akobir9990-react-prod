@@ -1,0 +1,32 @@
+.mapContainer {
+}
+
+.titleTexts {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-700";
+  font-size: 36px;
+  font-style: normal;
+  line-height: 150%;
+}
+.mapBtns {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+}
+.mapBtn {
+  width: 86px;
+  height: 32px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  gap: 8px;
+  background: rgba(243, 242, 241, 1);
+  border: none;
+}
+.mapBtn:active {
+  border-radius: 4px;
+  background: var(--main-secondary, #70c05b);
+  color: var(--main-on-secondary, #fff);
+  text-align: center;
+  padding: 4px 8px;
+  font-size: 12px;
+}

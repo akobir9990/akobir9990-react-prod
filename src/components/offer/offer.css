@@ -1,0 +1,35 @@
+.offer {
+  display: flex;
+  width: 584px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: var(--main-primary-muted, #fcd5ba);
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+  padding: 30px 40px;
+}
+.offerTitle {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-700";
+  font-size: 24px;
+  font-style: normal;
+  line-height: 150%;
+  color: rgba(65, 65, 65, 1);
+}
+.offerSubtitle {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150%;
+  color: rgba(65, 65, 65, 1);
+}
+.offerImage {
+  width: 206.762px;
+  height: 138.159px;
+
+  transform: rotate(13.866deg);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 8px 47px 0px rgba(200, 90, 53, 0.51);
+}
