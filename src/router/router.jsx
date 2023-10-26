@@ -1,22 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homePage/HomePage";
 import Admin from "../pages/admin/Admin";
+import Likes from "../pages/likes/Likes";
 import Orders from "../pages/orders/Orders";
 import Basket from "../pages/basket/Basket";
-import Likes from "../pages/likes/Likes";
-import Catalog from "../pages/catalog/Catalog";
+import Login from "../pages/login/Login";
 
 function router() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/admin" element={<Admin />} />
-      <Route path="/orders" element={<Orders />} />
-      <Route path="/basket" element={<Basket />} />
-      <Route path="/likes" element={<Likes />} />
-      <Route path="/catalog" element={<Catalog />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/likes" element={<Likes />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </>
   );
 }
-
 export default router;

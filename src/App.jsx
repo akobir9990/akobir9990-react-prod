@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./App.css";
 import getStore from "./utils/getStore/getStore";
-import Router from "./router/Router";
+import Router from "./router/router";
 
 function App() {
   // eslint-disable-next-line no-unused-vars
