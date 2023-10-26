@@ -1,5 +1,24 @@
-function PurchasedBefore() {
-  return <div>PurchasedBefore</div>;
+import "./purchasedBefore.css";
+import Product from "../productItem/ProductItem";
+import arrowRight from "../../assets/images/arrowRight.svg";
+
+function Stock() {
+  return (
+    <div className="container">
+      <div className="titleTexts">
+        <span className="title">Покупали раньше</span>
+        <button className="goToAllProducts">
+          Все продукты <img src={arrowRight} alt="" />
+        </button>
+      </div>
+      <div className="stockContent">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </div>
+    </div>
+  );
 }
 
-export default PurchasedBefore;
+export default Stock;

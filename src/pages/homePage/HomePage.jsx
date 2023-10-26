@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import fruits from "../../assets/images/fruits.svg";
 import Stock from "../../components/stock/Stock";
 import NewItems from "../../components/newItems/NewItems";
+import PurchasedBefore from "../../components/purchasedBefore/PurchasedBefore";
 
 import "./homePage.css";
 function HomePage(user, setUser) {
@@ -33,6 +34,9 @@ function HomePage(user, setUser) {
         </div>
         <div className="homeComponent">
           <NewItems />
+        </div>
+        <div className="homeComponent">
+          <PurchasedBefore />
         </div>
       </div>
 
