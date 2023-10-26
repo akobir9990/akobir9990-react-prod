@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background: var(--main-bg-page, #fbf8ec);
+}
 
 .container {
   border: 1px solid red;
@@ -14,4 +17,7 @@
 
 a {
   text-decoration: none;
+}
+.mainComponents .homeComponent {
+  margin-bottom: 120px;
 }

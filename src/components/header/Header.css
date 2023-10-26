@@ -3,6 +3,7 @@
 .header-container {
   display: flex;
   align-items: center;
+  background: white;
 }
 .catalog {
   display: flex;

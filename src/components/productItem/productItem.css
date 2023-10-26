@@ -1,13 +1,102 @@
 .item {
+  width: 272px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.top {
+  position: relative;
+}
+.bottom {
+  padding: 8px;
+}
+.like {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  opacity: 0.5;
+  background: var(--grayscale-lightest, #f3f2f1);
+}
+.img {
+  width: 272px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sale {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: inline-flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--main-primary, #f63);
+
+  /* typologiya */
+  color: var(--main-on-primary, #fff);
+  text-align: center;
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prices .priceByCard,
+.prices .simplePrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prices .priceByCard .priceByCard_price {
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-700";
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+.prices .priceByCard .priceByCard_text,
+.prices .simplePrice .simplePrice_text {
+  color: var(--grayscale-light, #bfbfbf);
+  font-family: "Rubik-400";
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+}
+.prices .simplePrice .simplePrice_price {
+  color: var(--grayscale-hardest, #606060);
+  font-family: "Rubik-400";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-.img {
-}
-.price {
-}
 .name {
+  width: 100%;
+  margin: 8px 0;
+  color: var(--main-on-surface, #414141);
+  font-family: "Rubik-400";
+  font-size: 16px;
 }
 .rank {
+  margin: 0 0 8px 0;
 }
 .addToBasket {
 }
