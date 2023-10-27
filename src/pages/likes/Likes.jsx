@@ -5,7 +5,7 @@ function Likes() {
   return (
     <div>
       <Header />
-      <div className="main">likes</div>
+      <div className="container main">likes</div>
       <Footer />
     </div>
   );

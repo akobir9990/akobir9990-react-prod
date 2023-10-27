@@ -5,7 +5,7 @@ function Basket() {
   return (
     <div>
       <Header />
-      <div className="main">basket</div>
+      <div className=" container main">basket</div>
       <Footer />
     </div>
   );

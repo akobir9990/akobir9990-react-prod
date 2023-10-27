@@ -16,7 +16,7 @@
   border-radius: 4px;
   border: none;
   gap: 8px;
-  background: rgba(112, 192, 91, 1);
+  background: #70c05b;
   cursor: pointer;
 }
 .catalog span {
@@ -47,7 +47,7 @@
 
 #searchInput {
   border: none;
-  flex-grow: 1;
+  background: transparent;
 }
 #searchInput:focus {
   outline: none;

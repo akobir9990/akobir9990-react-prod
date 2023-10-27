@@ -5,7 +5,7 @@ function Orders() {
   return (
     <div>
       <Header />
-      <div className="main">Orders</div>
+      <div className="container main">Orders</div>
       <Footer />
     </div>
   );

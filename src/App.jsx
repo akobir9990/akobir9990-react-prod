@@ -1,15 +1,20 @@
 /* eslint-disable no-undef */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import getStore from "./utils/getStore/getStore";
 import Router from "./router/router";
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const [products, setProducts] = useState(getStore("products"));
+  const [productName, setProductName] = useState("");
+  const [productPrice, setProductPrice] = useState("");
+  const [productCategory, setProductCategory] = useState("");
+  const [user, setUser] = useState(true);
 
-  console.log(products);
-  return <Router />;
+  useEffect(() => {
+    localStorage.setItem("products", JSON.stringify(products));
+  }, [products]);
+  return <Router user={user} />;
 }
 
 export default App;

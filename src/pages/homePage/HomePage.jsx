@@ -11,7 +11,7 @@ import "./homePage.css";
 function HomePage(user, setUser) {
   return (
     <div>
-      <div className="container">
+      {/* <div className="container">
         <input
           type="text"
           name=""
@@ -20,7 +20,7 @@ function HomePage(user, setUser) {
           onChange={(e) => setUser(e.target.value)}
         />
         <button className="hack">Submit</button>
-      </div>
+      </div> */}
       <Header />
       <div className="container home_container">
         <div className="deliveryTitle">
