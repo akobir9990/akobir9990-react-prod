@@ -50,7 +50,9 @@ function Header() {
         </div>
         <div className="admin">
           <img src={user} alt="ava" className="ava" />
-          <span>Алексей</span>
+          <NavLink to="/login">
+            <span>LogIn</span>
+          </NavLink>
           <img src={arrowDown} alt="icon" className="arrowDown" />
         </div>
       </div>
