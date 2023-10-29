@@ -8,19 +8,10 @@ import SpetialOffers from "../../components/specialOffers/SpecialOffers";
 import Map from "../../components/ourStores/OurStores";
 
 import "./homePage.css";
-function HomePage(user, setUser) {
+// eslint-disable-next-line react/prop-types
+function HomePage({ products, basket, setBasket }) {
   return (
     <div>
-      {/* <div className="container">
-        <input
-          type="text"
-          name=""
-          id="goToSecretPage"
-          value={user.name}
-          onChange={(e) => setUser(e.target.value)}
-        />
-        <button className="hack">Submit</button>
-      </div> */}
       <Header />
       <div className="container home_container">
         <div className="deliveryTitle">
@@ -32,7 +23,7 @@ function HomePage(user, setUser) {
       </div>
       <div className="mainComponents">
         <div className="homeComponent">
-          <Stock />
+          <Stock basket={basket} setBasket={setBasket} products={products} />
         </div>
         <div className="homeComponent">
           <NewItems />

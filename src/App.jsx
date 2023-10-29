@@ -1,20 +1,32 @@
 /* eslint-disable no-undef */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
-import getStore from "./utils/getStore/getStore";
+// import getStore from "./utils/getStore/getStore";
 import Router from "./router/router";
 
 const getUser = () => {
   return localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user"))
-    : false;
+    : null;
 };
+const getProducts = () => {
+  return localStorage.getItem("products")
+    ? JSON.parse(localStorage.getItem("products"))
+    : [];
+};
+const getBasket = () => {
+  return localStorage.getItem("basket")
+    ? JSON.parse(localStorage.getItem("basket"))
+    : [];
+};
+
 function App() {
-  const [products, setProducts] = useState(getStore("products"));
-  const [productName, setProductName] = useState("");
-  const [productPrice, setProductPrice] = useState("");
-  const [productCategory, setProductCategory] = useState("");
   const [user, setUser] = useState(getUser());
+  const [products, setProducts] = useState(getProducts());
+  const [basket, setBasket] = useState(getBasket());
+  const [productName, setProductName] = useState("");
+  const [productPrice, setProductPrice] = useState();
+  const [productCategory, setProductCategory] = useState("");
 
   const handleSubmit = ({ e, user }) => {
     e.preventDefault;
@@ -22,19 +34,26 @@ function App() {
       name: user,
     };
     setUser(newUser);
-    setUser("");
   };
+  console.log("basket from app.jsx => ", basket);
 
-  // console.log(products);
-  // const addProd = () => {
-  //   console.log("addprod");
-  // };
-
-  useEffect(() => {
-    localStorage.setItem("products", JSON.stringify(products));
-    localStorage.setItem("user", JSON.stringify(user));
-  }, [products, user]);
-  return <Router user={user} setUser={setUser} handleSubmit={handleSubmit} />;
+  return (
+    <Router
+      productName={productName}
+      setProductName={setProductName}
+      productPrice={productPrice}
+      setProductPrice={setProductPrice}
+      productCategory={productCategory}
+      setProductCategory={setProductCategory}
+      user={user}
+      setUser={setUser}
+      handleSubmit={handleSubmit}
+      setProducts={setProducts}
+      products={products}
+      basket={basket}
+      setBasket={setBasket}
+    />
+  );
 }
 
 export default App;
