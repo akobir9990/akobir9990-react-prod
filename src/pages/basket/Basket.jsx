@@ -20,7 +20,7 @@ function Basket({ basket }) {
             </div>
           );
         })} */}
-        <div className="item">
+        <div className="basketItem">
           <div className="itemImg">
             <img src="" alt="???" />
           </div>
