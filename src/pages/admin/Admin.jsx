@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import "./admin.css";
+import { uid } from "uid";
 
 function Admin({
   user,
@@ -15,9 +16,10 @@ function Admin({
   setProducts,
   products,
 }) {
+  const id = uid();
   const addProduct = (name, price, category) => {
     const newProduct = {
-      id: Math.floor(Math.random() * 10000),
+      id: id,
       name,
       price,
       category,
