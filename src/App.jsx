@@ -3,24 +3,11 @@ import { useState } from "react";
 import "./App.css";
 // import getStore from "./utils/getStore/getStore";
 import Router from "./router/router";
-
-const getUser = () => {
-  return localStorage.getItem("user")
-    ? JSON.parse(localStorage.getItem("user"))
-    : null;
-};
-const getProducts = () => {
-  return localStorage.getItem("products")
-    ? JSON.parse(localStorage.getItem("products"))
-    : [];
-};
-const getBasket = () => {
-  return localStorage.getItem("basket")
-    ? JSON.parse(localStorage.getItem("basket"))
-    : [];
-};
+import { useGlobalContext } from "./context";
 
 function App() {
+  const { getUser, getProducts, getBasket } = useGlobalContext();
+
   const [user, setUser] = useState(getUser());
   const [products, setProducts] = useState(getProducts());
   const [basket, setBasket] = useState(getBasket());
